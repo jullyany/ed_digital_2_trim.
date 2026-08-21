@@ -14,17 +14,17 @@
                padding: 20px;
            }
            header {
-               background-color: rgb(0, 174, 255);
+               background-color: rgb(161, 16, 89);
                color: #050505;
                text-align: center;
                max-width: 800px;
                margin: 0 auto 20px auto;
                padding: 16px;
-               border: 5px solid #00a2ff;
+               border: 5px solid #a71387;
            }
            main {
                background-color: #ffffff;
-               color: #0099ff;
+               color: #ec4895;
                max-width: 800px;
                margin: 0 auto;
                padding: 16px;
@@ -97,18 +97,18 @@
    
        <header>
            <h1>Meu blog tech</h1>
-           <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+           <p>Vou compartilhar conhecimentos sobre moda e antiguidades </p>
        </header>
    
        <main>
            <article>
                <div class="post">
                    <h2>Meu primeiro post</h2>
-                   <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+                   <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de moda e curiosidades da área da moda antiga.</p>
                    <p><strong>Por:</strong> Jullyany Mello</p>
                    
 
-                   <img src="jullyany-imagem" alt="Imagem sobre tecnologia e programação">
+                   <img src="ChatGPT Image 21 de ago. de 2026, 10_20_12.png" alt="Imagem sobre tecnologia e programação">
                    <p class="artigo-autor">Por: Jullyany Mello</p>
                    <div class="reacoes-container">
                     <button>👎🏻 <span>0</span></button>
@@ -119,4 +119,70 @@
 
         <article>
             <div class="post">
+                <h2>Mundo da moda no Blog</h2>
+               <p>Olha que interresante e diferente esse vestido </p>
+               <p><strong>Por:</strong> Jullyany Mello </p>
+              
+               <img src="vestido" alt="ilustração do vestido Tarkhan">
+              
+               <div class="curiosidades">
+                   <h3> curiosidades do Tarkhan dress</h3>
+                   <ul>
+                       <li><strong>Qual a idade dele?</strong> A peça tem cerca de 5.000 anos e é originada do Egito</li>
+                       <li><strong>Material utilizado:</strong> .É feito de linho — o tecido foi produzido a partir da planta do linho, muito usada no Egito Antigo.</li>
+                       <li><strong>Ainda tem detalhes de acabamento:</strong> Mesmo depois de milhares de anos, é possível observar partes da modelagem e das pregas do vestido..</li>
+                       <li><strong>Foi encontrado em uma tumba:</strong> O vestido foi descoberto em um local arqueológico chamado Tarkhan, no Egito, durante escavações no início do século XX.</li>
+                   </ul>
+               </div>
+              
+               <div class="reacoes-container">
+                   <div class="linha-emojis">
+                       <button>👎🏻 <span>0</span></button>
+                       <button>👍🏻 <span>0</span></button>
+                       <button>👗 <span>0</span></button>
+                   </div>
+                  
+                   <div class="linha-emojis">
+                       <button>🔥 <span>0</span></button>
+                       <button>❤️ <span>0</span></button>
+                       <button>🤯 <span>0</span></button>
+                   </div>
+               </div>
+           </div>
+       </article>
+
+
+       <p style="text-align: center;"><small>Site em desenvolvimento por Jullyany Mello</small></p>
+   </main>
+
+
+   <script>
+       const botoes = document.querySelectorAll("button");
+
+
+       botoes.forEach(function(botao) {
+          
+           botao.curtiu = false;
+
+
+           botao.addEventListener("click", function() {
+              
+               if (botao.curtiu === false) {
+                   console.log("fui clicado");
+                   let texto = botao.querySelector("span");
+                   texto.textContent++;
+                  
+                  
+                   botao.curtiu = true;
+
+
+                  
+                   botao.classList.add("clicado");
+               }
+           });
+       });
+   </script>
+</body>
+</html>
+
                 
